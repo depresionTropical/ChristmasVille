@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+h1 {
+    margin: 20px;
+    text-align: center;
+}
+.forms-container{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+form {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-arbol {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.btn-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}

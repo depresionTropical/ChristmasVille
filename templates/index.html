@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AAAIMX'S CHRISTMAS VILLE</h1>
+    <div class="forms-container">
+        <form id="miFormulario" action="/procesar/0" method="post">
+            <h2>Casitas</h2>
+            <label for="texto">Key:</label>
+            <input type="text" id="texto" name="texto" required>
+            <br>
+            <br>
+            <input type="submit" value="Procesar">
+        </form>
+        <form id="miFormulario" action="/procesar/1" method="post">
+            <h2>Carrusel</h2>
+            <label for="texto">Key:</label>
+            <input type="text" id="texto" name="texto" required>
+            <br>
+            <br>
+            <input type="submit" value="Procesar">
+        </form>
+        <form id="miFormulario" action="/procesar/2" method="post">
+            <h2>Arbol</h2>
+            <label for="texto">Key:</label>
+            <input type="text" id="texto" name="texto" required>
+            <br>
+            <br>
+            <input type="submit" value="Procesar">
+        </form>
+        <form id="miFormulario" action="/procesar/3" method="post">
+            <h2>Pc-bre</h2>
+            <label for="texto">Key:</label>
+            <input type="text" id="texto" name="texto" required>
+            <br>
+            <br>
+            <input type="submit" value="Procesar">
+        </form>
+        <form id="miFormulario" action="/procesar/4" method="post">
+            <h2>Carrito</h2>
+            <label for="texto">Key:</label>
+            <input type="text" id="texto" name="texto" required>
+            <br>
+            <br>
+            <input type="submit" value="Procesar">
+        </form>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-arbol" onclick="callPython()">Encender Arbol</button>   
+    </div>
+
+
+    <script>
+        function callPython(){
+            fetch('/estrella')
+        }
+    </script>
+</body>
+</html>
